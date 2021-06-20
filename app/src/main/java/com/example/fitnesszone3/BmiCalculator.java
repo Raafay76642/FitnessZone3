@@ -1,7 +1,6 @@
 package com.example.fitnesszone3;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Dialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -76,7 +75,6 @@ public class BmiCalculator extends AppCompatActivity {
     //    targetweight = Float.parseFloat(answer[4]);
         float heightmeter = height/100;
         BMI = weight/ (heightmeter*heightmeter);
-
     }
     public void calculateCalories()
     {
@@ -129,6 +127,5 @@ public class BmiCalculator extends AppCompatActivity {
             }
         });
         dialog.show();
-
     }
 }

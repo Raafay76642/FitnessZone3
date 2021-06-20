@@ -35,6 +35,11 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Gender.class);
         startActivity(intent);
     }
+    public  void openworkout(View view)
+    {
+        Intent intent = new Intent(this, workoutlist.class);
+        startActivity(intent);
+    }
 
 
 }
