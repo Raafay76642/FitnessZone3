@@ -111,4 +111,10 @@ public class Profile extends AppCompatActivity {
                 mProgressBarsaving.cancel();
             }
         });}
+
+
+        public void logout(View view)
+        {
+            FirebaseAuth.getInstance().signOut();
+        }
 }
