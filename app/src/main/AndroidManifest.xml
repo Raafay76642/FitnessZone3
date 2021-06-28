@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.fitnesszone3">
 
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,23 +11,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FitnessZone3">
-        <activity android:name=".workoutanimation"></activity>
-        <activity android:name=".workoutlist">
+        <activity android:name=".DietInformation">
 
         </activity>
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Profile" />
+        <activity android:name=".Reminder" />
+        <activity android:name=".workoutanimation" />
+        <activity android:name=".workoutlist" />
         <activity android:name=".Gender" />
         <activity android:name=".BmiCalculator" />
         <activity android:name=".VerifyCode" />
-        <activity android:name=".Signup"></activity>
+        <activity android:name=".Signup" />
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-        </activity>
+            android:label="@string/app_name"></activity>
     </application>
 
 </manifest>

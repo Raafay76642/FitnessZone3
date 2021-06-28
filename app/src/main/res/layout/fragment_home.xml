@@ -43,7 +43,8 @@
                 android:layout_marginRight="30dp"
                 app:cardCornerRadius="8dp"
                 app:cardBackgroundColor="#282C35"
-                android:background="#282C35">
+                android:background="#282C35"
+                android:onClick="openDiet">
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -68,7 +69,8 @@
                 android:layout_marginRight="30dp"
                 app:cardCornerRadius="8dp"
                 app:cardBackgroundColor="#282C35"
-                android:background="#282C35">
+                android:background="#282C35"
+                android:onClick="openDiet">
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -93,7 +95,8 @@
                 android:layout_marginRight="30dp"
                 app:cardCornerRadius="8dp"
                 app:cardBackgroundColor="#282C35"
-                android:background="#282C35">
+                android:background="#282C35"
+                android:onClick="openDiet">
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -118,7 +121,8 @@
                 android:layout_marginRight="30dp"
                 app:cardCornerRadius="8dp"
                 app:cardBackgroundColor="#282C35"
-                android:background="#282C35">
+                android:background="#282C35"
+                android:onClick="openDiet">
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -143,7 +147,8 @@
                 android:layout_marginRight="30dp"
                 app:cardCornerRadius="8dp"
                 app:cardBackgroundColor="#282C35"
-                android:background="#282C35">
+                android:background="#282C35"
+                android:onClick="openDiet">
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"

@@ -39,6 +39,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:backgroundTint="#ffffff"
+            android:textColor="#fff"
             android:hint="Enter Your Phone Number"
             android:inputType="textEmailAddress|phone"
             android:textColorHint="#ffffff"

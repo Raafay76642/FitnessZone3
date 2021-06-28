@@ -13,8 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:orientation="vertical"
-        android:padding="10dp"
-        >
+        android:padding="10dp">
 
         <TextView
             android:id="@+id/textname"
@@ -100,7 +99,7 @@
                     android:orientation="vertical"
                     android:padding="10sp"
                     android:layout_margin="10dp"
-                    android:onClick="OpenNearByService"
+                    android:onClick="OpenSetReminder"
 
 
                     >
@@ -116,7 +115,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:padding="10sp"
-                        android:text="Deit Plan"
+                        android:text="Set Reminder"
                         android:textAllCaps="true"
                         android:textColor="#fff"
                         android:textSize="12sp"
@@ -155,7 +154,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:padding="10sp"
-                        android:text="Workout"
+                        android:text="About App"
                         android:textAllCaps="true"
                         android:textColor="#fff"
                         android:textSize="12sp"

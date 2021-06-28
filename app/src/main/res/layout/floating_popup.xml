@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="350dp"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    android:layout_gravity="center"
+    android:padding="25dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:hint="Set Reminder"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:hint="Date And Time"
+            android:layout_gravity="center"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/selectDate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:text="SELECT"
+            android:background="@drawable/gradiant"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:hint="Message"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:gravity="center"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/gradiant"
+        android:textColor="@color/white"
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Add"
+        android:layout_gravity="center" />
+
+</LinearLayout>
