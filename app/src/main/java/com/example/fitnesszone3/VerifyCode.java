@@ -86,7 +86,8 @@ public class VerifyCode extends AppCompatActivity {
         public void onVerificationCompleted(PhoneAuthCredential phoneAuthCredential) {
 
             //Getting the code sent by SMS
-            String code = phoneAuthCredential.getSmsCode();
+            String code = null;
+                    //phoneAuthCredential.getSmsCode();
 
             //sometime the code is not detected automatically
             //in this case the code will be null
@@ -135,21 +136,12 @@ public class VerifyCode extends AppCompatActivity {
                         } else {
 
                             //verification unsuccessful.. display an error message
-
-                            String message = "Somthing is wrong, we will fix it soon...";
-
                             if (task.getException() instanceof FirebaseAuthInvalidCredentialsException) {
-                                message = "Invalid code entered...";
+                                Toast.makeText(VerifyCode.this, "You Enterd the Wrong Code",
+                                        Toast.LENGTH_LONG).show();
+
                             }
 
-                            Snackbar snackbar = Snackbar.make(findViewById(R.id.parent), message, Snackbar.LENGTH_LONG);
-                            snackbar.setAction("Dismiss", new View.OnClickListener() {
-                                @Override
-                                public void onClick(View v) {
-
-                                }
-                            });
-                            snackbar.show();
                         }
                     }
                 });
